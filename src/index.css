@@ -1,13 +1,58 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background: linear-gradient(to left, #AFDBEF, #4ab9ec);
+  box-sizing: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+header input {
+  display: inline-block;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  background: none;
+  outline: none;
+  border: none;
+  appearance: none;
+}
+
+header:before {
+  content: '/r/';
+  display: inline-block;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  z-index: 100;
+}
+
+.articles article {
+  padding: 30px 30px;
+  background: #ffffff;
+}
+
+.articles article a {
+  text-decoration: none;
+}
+
+.articles article h3 {
+  color: #1b1b1b;
+  font-weight: 300;
+}
+
+.articles article:nth-child(2n) {
+  background: #f3f3f3;
+}
+
+.articles article:hover{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  transform: scale(1);
 }
